@@ -2,7 +2,9 @@
 
 ### Database
 
+```
 mysql -u root -p  < src/models/create-user-db.sql 
+```
 
 ### `npm start`
 
@@ -19,4 +21,9 @@ You will also see any lint errors in the console.
 chmod +x .docker/entrypoint.sh
 
 docker-compose up -d 
+```
+## Add dependences on project run on container
+
+```
+docker-compose exec app bash
 ```
